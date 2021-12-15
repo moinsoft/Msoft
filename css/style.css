@@ -79,4 +79,67 @@ Alignment
   text-align: justify;
 }
 
+/*====================
+Header Section
+======================*/
+.header-area {
+  padding: 20px 0;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  column-gap: 50px;
+  align-items: center;
+}
+.header__logo {
+  width: 150px;
+  height: auto;
+}
+.header__navList {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  justify-content: end;
+  column-gap: 20px;
+}
+.header__navLink {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+}
+.header__navLink::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background-color: #FF6600;
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+.header__navLink::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  right: 0;
+  bottom: 0;
+  background-color: #FF6600;
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+.header__navLink:hover {
+  color: #FF6600;
+}
+.header__navLink:hover::before {
+  visibility: visible;
+  width: 50%;
+}
+.header__navLink:hover::after {
+  visibility: visible;
+  width: 50%;
+}
+
 /*# sourceMappingURL=style.css.map */

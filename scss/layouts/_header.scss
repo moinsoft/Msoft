@@ -1,0 +1,73 @@
+@import '../base/variable';
+
+/*====================
+Header Section
+======================*/
+
+.header-area{
+  padding: 20px 0;
+}
+
+.header{
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  column-gap: 50px;
+  align-items: center;
+
+  &__logo{
+    width: 150px;
+    height: auto;
+  }
+
+  &__navList{
+    display: grid;
+    grid-template-columns: repeat(8,auto);
+    justify-content: end;
+    column-gap: 20px;
+  }
+
+  &__navLink{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+
+    &::before{
+      content: "";
+      position: absolute;
+      width:0;
+      height: 3px;
+      left: 0;
+      bottom: 0;
+      background-color: $primaryColor;
+      visibility: hidden;
+      transition: all 0.3s linear;
+    }
+
+    &::after{
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 3px;
+      right: 0;
+      bottom: 0;
+      background-color: $primaryColor;
+      visibility: hidden;
+      transition: all 0.3s linear;
+    }
+
+    &:hover{
+      color: $primaryColor;
+
+      &::before{
+        visibility: visible;
+        width: 50%;
+      }
+
+      &::after{
+        visibility: visible;
+        width: 50%;
+      }
+    }
+  }
+}
