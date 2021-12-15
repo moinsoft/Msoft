@@ -8,7 +8,7 @@ $secondaryFontFamily: 'Raleway', sans-serif;
 
 $whiteColor: #ffffff;
 $blackColor: #000000;
-$lightGrayColor:#dddddd;
+$lightGrayColor:#bbbbbb;
 $lightGreenColor: #009900;
 
 
@@ -16,22 +16,26 @@ $lightGreenColor: #009900;
 // Theme Color
 
 $primaryColor: #FF6600;
+$primaryHoverColor: #d35400;
 $secondaryColor: #E67E22;
 $bgGrayColor: #333333;
 $bgNavbarColor: #555555;
 
 
 
+
 // Font Size
 
-$primaryFontSize: 1rem;           //16px
-$secondaryFontSize: 1.125rem;     //18px
+$primaryFontSize: 1rem;            //16px
+$secondaryFontSize: 0.875rem;      //14px
 
 
-// Heading Size
+// Heading Font Size
 
-$primaryHeading: 3.75rem;          //60px
-$secondaryHeading: 1.25rem;        //20px
-$headingThree: 1.875rem;           //35px
+$mainHeading: 3.125rem;            //50px
+$primaryHeading: 2rem;             //32px
+$secondaryHeading: 1.75rem;        //28px
+$headingThree: 1.625rem;           //26px
+$headingFour: 1.375rem;            //22px
 
 

@@ -49,6 +49,57 @@ Common CSS
 
 
 /*====================
+Background CSS
+======================*/
+@mixin bg{
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+
+  &::before{
+    content: "";
+    position: absolute;
+    background-color: $bgGrayColor;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .9;
+    z-index: -1;
+  }
+}
+
+
+/*====================
+Common Button CSS
+======================*/
+.btn{
+  display: inline-block;
+  color: $whiteColor;
+  border-radius: 7px;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: 1px solid $primaryColor;
+  
+  &.btn-box{
+    background-color: $primaryColor;
+    &:hover{
+      border: 1px solid $primaryHoverColor;
+      background-color:$primaryHoverColor;
+    }
+  }
+
+  &.btn-border{
+    background-color: transparent;
+    &:hover{
+      background-color: $primaryColor;
+    }
+  }
+}
+
+/*====================
 Margin & Padding
 ======================*/
 
