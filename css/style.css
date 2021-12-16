@@ -71,6 +71,39 @@ Common Button CSS
 }
 
 /*====================
+Common Section Title
+======================*/
+.section-title {
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+.section-title__subtitle {
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.section-title__title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  position: relative;
+}
+.section-title__title::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  background-color: #FF6600;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*====================
 Margin & Padding
 ======================*/
 .pt-50 {
@@ -223,6 +256,106 @@ Banner Section
 }
 .banner__btn .btn {
   margin: 30px 10px;
+}
+
+/*====================
+About Section
+======================*/
+.about__top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+}
+.about__title {
+  text-transform: capitalize;
+  font-size: 28px;
+  font-weight: 500;
+}
+.about__copy {
+  margin: 20px 0;
+  text-align: justify;
+}
+.about__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+}
+.about__item {
+  justify-self: start;
+  text-transform: capitalize;
+  padding-left: 20px;
+  position: relative;
+  transition: all 0.3s linear;
+}
+.about__item::before {
+  content: "\f101";
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  color: #FF6600;
+}
+.about__item:hover {
+  margin-left: 5px;
+  color: #FF6600;
+}
+.about__content .btn {
+  margin-top: 30px;
+}
+.about__media-bject {
+  position: relative;
+}
+.about__media-bject::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #FF6600;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 10px;
+  z-index: -1;
+}
+.about__media-bject img {
+  border-radius: 10px;
+}
+.about__bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+.about__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 40px;
+  border: 1px solid #bbbbbb;
+  font-size: 26px;
+  transition: all 0.3s linear;
+}
+.about__single:hover .about__icon {
+  background-color: #FF6600;
+  border: 1px solid #FF6600;
+  color: #ffffff;
+}
+.about__single-title {
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.about__single .btn {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.about__single .btn i {
+  margin-left: 5px;
+  transition: all 0.1s linear;
+}
+.about__single .btn:hover i {
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
