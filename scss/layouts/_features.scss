@@ -3,3 +3,152 @@
 /*====================
 Features Section
 ======================*/
+.features{
+  background-color: $grayWhite;
+
+  &__one{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    position: relative;
+
+    &::before{
+      content: "";
+      position: absolute;
+      background-image: url("../../assets/features/feature-1.jpg");
+      background-position: center;
+      background-size: cover;
+      width: 50%;
+      height: 100%;
+      right: 0;
+      top: 0;
+    }
+
+    &::after{
+      content: "";
+      position: absolute;
+      background-color: $blackColor;
+      width: 50%;
+      height: 100%;
+      right: 0;
+      top: 0;
+      opacity: .6;
+    }
+  }
+
+  &__two{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    position: relative;
+
+    &::before{
+      content: "";
+      position: absolute;
+      background-image: url("../../assets/features/feature-2.jpg");
+      background-position: center;
+      background-size: cover;
+      width: 50%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    &::after{
+      content: "";
+      position: absolute;
+      background-color: $blackColor;
+      width: 50%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      opacity: .6;
+    }
+
+    &--flex{
+      display: flex;
+      justify-content: end;
+    }
+  }
+
+
+  &__box{
+
+    &--flexItem{
+      flex-basis: 50%;
+    }
+  }
+
+
+  &__content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  &__single{
+    display: grid;
+    row-gap: 10px;
+  }
+
+  &__icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 40px;
+    font-size: 26px;
+    margin: 0 auto;
+    background-color: $primaryColor;
+    color: $whiteColor;
+  }
+
+  &__title{
+    text-transform: capitalize;
+    font-size: $headingFour;
+    font-weight: 500;
+  }
+
+
+  &__menu{
+    max-width: 600px;
+    margin: 0 auto;
+
+    .btn{
+      margin-top: 100px;
+    }
+  }
+
+
+  
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 20px;
+    column-gap: 90px;
+  }
+
+  &__item{
+    justify-self: start;
+    text-transform: capitalize;
+    padding-left: 20px;
+    position: relative;
+    transition: all 0.3s linear;
+
+    &::before{
+    content: '\f164';
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    color: $primaryColor;
+    }
+
+    &:hover{
+      margin-left: 5px;
+      color: $primaryColor;
+    }
+  }
+  
+  
+}
