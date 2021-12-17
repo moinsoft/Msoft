@@ -4,3 +4,50 @@
 Services Section
 ======================*/
 
+.services{
+
+  &__content{
+    display: grid;
+    grid-template: repeat(2,1fr)/repeat(3,1fr);
+    gap: 30px;
+  }
+
+  &__single{
+    padding: 20px;
+    border: 1px solid $lightGrayColor;
+    border-radius: 10px;
+    transition: all .3s linear;
+
+    &:hover{
+      box-shadow: 0 0 10px $lightGrayColor;
+
+      .services__icon{
+        background-color: $primaryColor;
+        border: 1px solid $primaryColor;
+        color: $whiteColor;
+        transform: rotate(360deg);
+      }
+
+    }
+  }
+
+  &__icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 44px;
+    border: 1px solid $lightGrayColor;
+    font-size: $headingThree;
+    margin: 0 auto;
+    transition: all .3s linear;
+  }
+
+
+  &__title{
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px 0;
+  }
+
+}

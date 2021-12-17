@@ -486,5 +486,41 @@ Features Section
 /*====================
 Services Section
 ======================*/
+.services__content {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+  gap: 30px;
+}
+.services__single {
+  padding: 20px;
+  border: 1px solid #bbbbbb;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+.services__single:hover {
+  box-shadow: 0 0 10px #bbbbbb;
+}
+.services__single:hover .services__icon {
+  background-color: #FF6600;
+  border: 1px solid #FF6600;
+  color: #ffffff;
+  transform: rotate(360deg);
+}
+.services__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 44px;
+  border: 1px solid #bbbbbb;
+  font-size: 1.625rem;
+  margin: 0 auto;
+  transition: all 0.3s linear;
+}
+.services__title {
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 20px 0;
+}
 
 /*# sourceMappingURL=style.css.map */
