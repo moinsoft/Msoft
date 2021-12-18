@@ -6,74 +6,37 @@ Features Section
 .features{
   background-color: $grayWhite;
 
+  .section-title{
+    margin: 0 auto 30px;
+  }
+
   &__one{
     display: grid;
     grid-template-columns:repeat(2,1fr);
-    position: relative;
-
-    &::before{
-      content: "";
-      position: absolute;
-      background-image: url("../../assets/features/feature-1.jpg");
-      background-position: center;
-      background-size: cover;
-      width: 50%;
-      height: 100%;
-      right: 0;
-      top: 0;
-    }
-
-    &::after{
-      content: "";
-      position: absolute;
-      background-color: $blackColor;
-      width: 50%;
-      height: 100%;
-      right: 0;
-      top: 0;
-      opacity: .6;
-    }
+    justify-items: center;
+    align-items: center;
   }
+
 
   &__two{
     display: grid;
     grid-template-columns:repeat(2,1fr);
-    position: relative;
+    justify-items: center;
+    align-items: center;
+  }
 
-    &::before{
-      content: "";
-      position: absolute;
-      background-image: url("../../assets/features/feature-2.jpg");
-      background-position: center;
-      background-size: cover;
-      width: 50%;
-      height: 100%;
-      left: 0;
-      top: 0;
-    }
+  &__media-object{
+    position: relative;
 
     &::after{
       content: "";
       position: absolute;
       background-color: $blackColor;
-      width: 50%;
+      width: 100%;
       height: 100%;
       left: 0;
       top: 0;
       opacity: .6;
-    }
-
-    &--flex{
-      display: flex;
-      justify-content: end;
-    }
-  }
-
-
-  &__box{
-
-    &--flexItem{
-      flex-basis: 50%;
     }
   }
 
@@ -83,7 +46,6 @@ Features Section
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     max-width: 700px;
-    margin: 0 auto;
   }
 
   &__single{
@@ -149,6 +111,5 @@ Features Section
       color: $primaryColor;
     }
   }
-  
   
 }
