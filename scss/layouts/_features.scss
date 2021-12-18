@@ -6,10 +6,6 @@ Features Section
 .features{
   background-color: $grayWhite;
 
-  .section-title{
-    margin: 0 auto 30px;
-  }
-
   &__one{
     display: grid;
     grid-template-columns:repeat(2,1fr);
@@ -38,6 +34,10 @@ Features Section
       top: 0;
       opacity: .6;
     }
+  }
+
+  &__img{
+    height:800px;
   }
 
 

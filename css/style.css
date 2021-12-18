@@ -364,9 +364,6 @@ Features Section
 .features {
   background-color: #f2f2f2f2;
 }
-.features .section-title {
-  margin: 0 auto 30px;
-}
 .features__one {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -391,6 +388,9 @@ Features Section
   left: 0;
   top: 0;
   opacity: 0.6;
+}
+.features__img {
+  height: 800px;
 }
 .features__content {
   display: grid;
@@ -490,5 +490,9 @@ Services Section
   font-weight: 500;
   margin: 20px 0;
 }
+
+/*====================
+Process Section
+======================*/
 
 /*# sourceMappingURL=style.css.map */
