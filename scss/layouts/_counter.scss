@@ -4,3 +4,34 @@
 Counter Section
 ======================*/
 
+
+.counter{
+  @include bg;
+
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__single{
+    color: $whiteColor;
+    text-align: center;
+  }
+
+  &__icon{
+    font-size:35px;
+  }
+
+  &__number{
+    font-size:40px;
+    margin: 40px 0;
+    font-weight: 500;
+  }
+
+  &__title{
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+}

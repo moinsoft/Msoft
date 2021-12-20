@@ -5,6 +5,7 @@ Process Section
 ======================*/
 .process{
   @include bg;
+  background-attachment: fixed;
   color: $whiteColor;
 
   &__content{

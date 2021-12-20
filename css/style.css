@@ -303,10 +303,10 @@ About Section
 .about__content .btn {
   margin-top: 30px;
 }
-.about__media-bject {
+.about__media-object {
   position: relative;
 }
-.about__media-bject::after {
+.about__media-object::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -317,7 +317,7 @@ About Section
   border-radius: 10px;
   z-index: -1;
 }
-.about__media-bject img {
+.about__media-object img {
   border-radius: 10px;
 }
 .about__bottom {
@@ -499,6 +499,7 @@ Process Section
   background-size: cover;
   position: relative;
   z-index: 2;
+  background-attachment: fixed;
   color: #ffffff;
 }
 .process::before {
@@ -551,8 +552,9 @@ Projects Section
   gap: 30px;
 }
 .projects__single {
-  border: 3px solid #FF6600;
+  border: 3px solid #bbbbbb;
   position: relative;
+  transition: all 0.3s linear;
 }
 .projects__single::before {
   content: "";
@@ -565,6 +567,9 @@ Projects Section
   opacity: 0.8;
   transform: scale(0);
   transition: all 0.3s linear;
+}
+.projects__single:hover {
+  border: 3px solid #FF6600;
 }
 .projects__single:hover::before {
   transform: scale(1);
@@ -611,5 +616,44 @@ Projects Section
 /*====================
 Counter Section
 ======================*/
+.counter {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+.counter::before {
+  content: "";
+  position: absolute;
+  background-color: #333333;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: -1;
+}
+.counter__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.counter__single {
+  color: #ffffff;
+  text-align: center;
+}
+.counter__icon {
+  font-size: 35px;
+}
+.counter__number {
+  font-size: 40px;
+  margin: 40px 0;
+  font-weight: 500;
+}
+.counter__title {
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
 
 /*# sourceMappingURL=style.css.map */
