@@ -19,33 +19,14 @@ Team Section
     height: 350px;
     border: 2px solid $lightGrayColor;
     background-color: $grayWhite;
-    padding: 2px;
     position: relative;
-    transition: all 0.3s linear;
-
-    &::before{
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: $blackColor;
-      left: 0;
-      top: 0;
-      opacity: 0.8;
-      transform: scale(1);
-      transition: all 0.3s linear;
-    }
-
+    overflow: hidden;
 
     &:hover{
       border: 2px solid $primaryColor;
 
-      &::before{
-        transform: scale(1);
-      }
-
       .team__info{
-        transform: scale(1);
+        bottom: 0;
       }
       
     }
@@ -59,7 +40,10 @@ Team Section
 
   &__info{
     position: absolute;
-    top: 0;
+    bottom: -350px;
+    left: 0;
+    background-color: $bgGrayColor;
+    opacity: .8;
     color: $whiteColor;
     width: 100%;
     height: 100%;
@@ -67,7 +51,6 @@ Team Section
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: scale(1);
     transition: all 0.3s linear;
   }
 
