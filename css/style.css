@@ -42,9 +42,6 @@ Common CSS
 }
 
 /*====================
-Background CSS
-======================*/
-/*====================
 Common Button CSS
 ======================*/
 .btn {
@@ -229,7 +226,7 @@ Banner Section
   opacity: 0.8;
   z-index: -1;
 }
-.banner__contant {
+.banner__content {
   color: #ffffff;
   display: flex;
   flex-direction: column;
