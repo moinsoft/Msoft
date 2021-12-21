@@ -721,5 +721,41 @@ Team Section
 /*====================
 Video Section
 ======================*/
+.video {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+.video::before {
+  content: "";
+  position: absolute;
+  background-color: #333333;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: -1;
+}
+.video__content {
+  color: #ffffff;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.video__icon {
+  font-size: 5.125rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.video__icon:hover {
+  color: #FF6600;
+}
+.video__title {
+  font-size: 3.125rem;
+  font-weight: 400;
+  margin: 50px 0;
+  text-transform: uppercase;
+}
 
 /*# sourceMappingURL=style.css.map */

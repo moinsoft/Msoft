@@ -4,3 +4,30 @@
 Video Section
 ======================*/
 
+.video{
+  @include bg;
+
+  &__content{
+    color: $whiteColor;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  &__icon{
+    font-size: $mainHeading+2;
+    transition: all 0.3s linear;
+    cursor: pointer;
+
+    &:hover{
+      color: $primaryColor;
+    }
+  }
+
+  &__title{
+    font-size: $mainHeading;
+    font-weight: 400;
+    margin: 50px 0;
+    text-transform: uppercase;
+  }
+
+}
