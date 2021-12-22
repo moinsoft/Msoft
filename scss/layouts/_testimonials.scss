@@ -3,3 +3,60 @@
 /*====================
 Testimonials Section
 ======================*/
+
+.testimonials{
+  @include bg;
+  color: $whiteColor;
+
+  &__content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+  }
+
+  &__single{
+    border: 1px solid $lightGrayColor;
+    text-align: center;
+    padding: 20px;
+  }
+
+
+  &__icon{
+    color: $lightGrayColor;
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  &__author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  &__author-img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid $lightGrayColor;
+    border-radius: 50%;
+  }
+
+
+  &__author-info{
+    margin-left: 10px;
+    color: $lightGrayColor;
+  }
+
+
+  &__author-name{
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+
+  &__author-designation{
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+}
