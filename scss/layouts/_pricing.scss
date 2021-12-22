@@ -4,3 +4,70 @@
 Pricing Section
 ======================*/
 
+.pricing{
+  
+  &__content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 50px;
+    text-align: center;
+  }
+
+
+  &__single{
+    border: 1px solid $lightGrayColor;
+    background-color: $grayWhite;
+    border-radius: 10px;
+
+    &--active{
+      border: 1px solid $primaryColor;
+      transform: scale(1.1);
+    }
+  }
+
+
+  &__title{
+    font-size: $headingThree;
+    background-color: $lightGrayColor;
+    color: $whiteColor;
+    padding: 20px 0;
+    border-radius: 10px 10px 0 0;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    &--active{
+      background-color: $primaryColor;
+    }
+  }
+
+
+  &__subtitle{
+    font-size: $primaryHeading;
+    padding: 20px 0;
+    border-bottom: 1px solid $lightGrayColor;
+
+    span{
+      font-size: $primaryFontSize;
+      font-weight: 400;
+      margin-left: 10px;
+      font-style: italic;
+    }
+
+  }
+
+  &__item{
+    border-bottom: 1px solid $lightGrayColor;
+    padding: 20px 0;
+    transition: all 0.3s linear;
+
+    &:hover{
+      background-color: $lightGrayColor;
+      color: $whiteColor;
+    }
+  }
+
+  .btn{
+    margin: 20px 0;
+  }
+
+}

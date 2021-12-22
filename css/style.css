@@ -761,5 +761,55 @@ Video Section
 /*====================
 Pricing Section
 ======================*/
+.pricing__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  text-align: center;
+}
+.pricing__single {
+  border: 1px solid #bbbbbb;
+  background-color: #f2f2f2f2;
+  border-radius: 10px;
+}
+.pricing__single--active {
+  border: 1px solid #FF6600;
+  transform: scale(1.1);
+}
+.pricing__title {
+  font-size: 1.625rem;
+  background-color: #bbbbbb;
+  color: #ffffff;
+  padding: 20px 0;
+  border-radius: 10px 10px 0 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.pricing__title--active {
+  background-color: #FF6600;
+}
+.pricing__subtitle {
+  font-size: 2rem;
+  padding: 20px 0;
+  border-bottom: 1px solid #bbbbbb;
+}
+.pricing__subtitle span {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 10px;
+  font-style: italic;
+}
+.pricing__item {
+  border-bottom: 1px solid #bbbbbb;
+  padding: 20px 0;
+  transition: all 0.3s linear;
+}
+.pricing__item:hover {
+  background-color: #bbbbbb;
+  color: #ffffff;
+}
+.pricing .btn {
+  margin: 20px 0;
+}
 
 /*# sourceMappingURL=style.css.map */
