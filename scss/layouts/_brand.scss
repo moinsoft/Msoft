@@ -5,3 +5,11 @@ Brand Section
 ======================*/
 
 
+.brand{
+  background-color: $grayWhite;
+  &__content{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 30px;
+  }
+}
