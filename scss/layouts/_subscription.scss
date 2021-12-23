@@ -4,3 +4,36 @@
 Subscription Section
 ======================*/
 
+.subscription{
+  @include bg;
+  color: $whiteColor;
+
+  &__form{
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__input{
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid $lightGrayColor;
+    border-radius: 50px;
+    font-size:$primaryFontSize;
+
+    &::placeholder{
+      text-transform: capitalize;
+    }
+
+    &--submit{
+      position: absolute;
+      width: auto;
+      right: 0;
+      top: 0;
+      border-color: $primaryColor;
+      font-weight: bold;
+      padding: 15px 40px;
+      cursor: pointer;
+    }
+  }
+}

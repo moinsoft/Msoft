@@ -937,5 +937,48 @@ Blog Section
 /*====================
 Subscription Section
 ======================*/
+.subscription {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+.subscription::before {
+  content: "";
+  position: absolute;
+  background-color: #333333;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: -1;
+}
+.subscription__form {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+.subscription__input {
+  width: 100%;
+  padding: 15px 10px;
+  border: 1px solid #bbbbbb;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+.subscription__input::placeholder {
+  text-transform: capitalize;
+}
+.subscription__input--submit {
+  position: absolute;
+  width: auto;
+  right: 0;
+  top: 0;
+  border-color: #FF6600;
+  font-weight: bold;
+  padding: 15px 40px;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
