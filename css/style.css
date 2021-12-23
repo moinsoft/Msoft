@@ -348,7 +348,7 @@ About Section
 }
 .about__single .btn i {
   margin-left: 5px;
-  transition: all 0.1s linear;
+  transition: all 0.3s linear;
 }
 .about__single .btn:hover i {
   margin-left: 10px;
