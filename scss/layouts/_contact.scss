@@ -3,3 +3,97 @@
 /*====================
 Contact Section
 ======================*/
+
+.contact{
+
+  &__content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 30px;
+  }
+
+  &__address{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+  }
+
+  &__single{
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon{
+    font-size: $primaryHeading;
+    background-color: $primaryColor;
+    color: $whiteColor;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 60px;
+    margin-right: 20px;
+  }
+
+
+  &__title{
+    text-transform: uppercase;
+    font-size: $headingFour;
+    font-weight: 500;
+  }
+
+  
+  &__copy{
+    font-size: $primaryFontSize;
+
+    &--moinsoft{
+
+      &:hover{
+        color: $primaryColor;
+      }
+    }
+  }
+
+
+  &__input{
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border: 1px solid $lightGrayColor;
+    border-radius: 7px;
+    font-size: $primaryFontSize;
+
+    &::placeholder{
+      text-transform: capitalize;
+    }
+
+  }
+
+
+  &__textarea{
+    min-width: 100%;
+    max-width: 570px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border: 1px solid $lightGrayColor;
+    border-radius: 7px;
+    font-size: 17px;
+
+    &::placeholder{
+      text-transform: capitalize;
+    }
+  }
+
+  &__btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+
+    .btn{
+      margin-bottom: 0;
+    }
+    
+  }
+
+
+
+}
