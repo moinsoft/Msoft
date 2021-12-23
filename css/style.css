@@ -1049,6 +1049,7 @@ Contact Section
 }
 .contact__btn .btn {
   margin-bottom: 0;
+  cursor: pointer;
 }
 
 /*====================
