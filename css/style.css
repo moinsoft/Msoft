@@ -757,6 +757,7 @@ Video Section
   margin: 0 auto;
 }
 .video__icon {
+  color: #ffffff;
   font-size: 5.125rem;
   transition: all 0.3s linear;
   cursor: pointer;

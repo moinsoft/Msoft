@@ -61,7 +61,7 @@ $(document).ready(function () {
   });
 
 
-  // Magnific Popup Plugin Active
+  // Magnific Image Popup Plugin Active
 
   $('.projects__img-popup').magnificPopup({
 
@@ -69,6 +69,15 @@ $(document).ready(function () {
     gallery: {
       enabled: true
     },
+
+  });
+
+
+  // Magnific Video Popup Plugin Active
+
+  $('.video__popup').magnificPopup({
+
+    type: 'iframe'
 
   });
 
