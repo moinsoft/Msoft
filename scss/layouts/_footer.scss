@@ -5,3 +5,76 @@ Footer Section
 ======================*/
 
 
+.footer{
+  background-color: $bgNavbarColor;
+  position: relative;
+  
+
+  &__list{
+    margin-bottom: 30px;
+  }
+
+
+  &__link{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $lightGrayColor;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    margin: 0 20px;
+  }
+
+
+  &__icon{
+    font-size: $headingFour;
+    color: $lightGrayColor;
+  }
+
+
+  &__copy{
+    color: $lightGrayColor;
+  }
+
+
+  &__copyright-author{
+    color: $lightGrayColor;
+    font-weight: 500;
+    
+
+    &:hover{
+      color: $whiteColor;
+    }
+  }
+
+
+
+  &__jump{
+    position: absolute;
+    right: 40px;
+    top: 50%;
+  }
+
+
+  &__jump-link{
+    display: inline-block;
+    font-size: $headingFour;
+    background: $blackColor;
+    color: $whiteColor;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    box-shadow: 0 0 1px 2px $boxShadowColor;
+    transition: all 0.3s ease;
+
+    &:hover{
+      color: $deepRedColor;
+      box-shadow: 0 0 3px 2px $boxShadowColor;
+    }
+  }
+
+
+}
