@@ -24,12 +24,22 @@ Footer Section
     text-align: center;
     line-height: 35px;
     margin: 0 20px;
+
+    &:hover{
+      border-color: $primaryColor;
+
+      .footer__icon{
+        color: $primaryColor;
+        transform: rotate(360deg);
+      }
+    }
   }
 
 
   &__icon{
     font-size: $headingFour;
     color: $lightGrayColor;
+    transition: all 0.3s ease;
   }
 
 
@@ -44,7 +54,7 @@ Footer Section
     
 
     &:hover{
-      color: $whiteColor;
+      color: $primaryColor;
     }
   }
 
@@ -67,12 +77,12 @@ Footer Section
     border-radius: 50%;
     text-align: center;
     line-height: 35px;
-    box-shadow: 0 0 1px 2px $boxShadowColor;
+    box-shadow: 0 0 1px 2px $lightGrayColor;
     transition: all 0.3s ease;
 
     &:hover{
-      color: $deepRedColor;
-      box-shadow: 0 0 3px 2px $boxShadowColor;
+      color: $primaryColor;
+      box-shadow: 0 0 3px 2px $primaryColor;
     }
   }
 
