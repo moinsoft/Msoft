@@ -169,6 +169,9 @@ Header Section
   justify-content: end;
   column-gap: 20px;
 }
+.header__navItem.current .header__navLink {
+  color: #FF6600;
+}
 .header__navLink {
   display: inline-block;
   text-transform: uppercase;

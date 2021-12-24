@@ -36,6 +36,19 @@ Header Section
     column-gap: 20px;
   }
 
+
+  &__navItem{
+
+    &.current{
+
+      .header__navLink{
+        color: $primaryColor;
+      }
+    }
+  }
+
+  
+
   &__navLink{
     display: inline-block;
     text-transform: uppercase;
