@@ -59,24 +59,19 @@ Footer Section
   }
 
 
-
-  &__jump{
-    position: absolute;
-    right: 40px;
-    top: 50%;
-  }
-
-
-  &__jump-link{
-    display: inline-block;
-    font-size: $headingFour;
-    background: $blackColor;
-    color: $whiteColor;
+  .scroll-top{
+    position: fixed;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    text-align: center;
     line-height: 35px;
+    text-align: center;
+    right: 40px;
+    bottom: 40px;
+    font-size: $headingFour;
+    background: $blackColor;
+    color: $whiteColor;
+    z-index: 999999;
     box-shadow: 0 0 1px 2px $lightGrayColor;
     transition: all 0.3s ease;
 
