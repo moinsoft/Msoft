@@ -55,7 +55,21 @@ $(document).ready(function () {
   // Smooth Scroll And Current Class Active
 
   $('#nav').onePageNav({
+
     currentClass: 'current'
+
+  });
+
+
+  // Magnific Popup Plugin Active
+
+  $('.projects__img-popup').magnificPopup({
+
+    type: 'image',
+    gallery: {
+      enabled: true
+    },
+
   });
 
 

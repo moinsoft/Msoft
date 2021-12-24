@@ -60,24 +60,30 @@ Projects Section
   }
 
 
+  &__icon{
+    color: $whiteColor;
+    display: block;
+    font-size: $secondaryHeading;
+    margin-bottom: 20px;
+    transition: all 0.3s linear;
+
+    &:hover{
+      color: $primaryColor;
+    }
+
+  }
+
+
   &__title{
     color: $whiteColor;
     font-size: $headingFour;
     text-transform: capitalize;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
     &:hover{
       color: $primaryColor;
     }
   }
-  
-
-  &__icon{
-    display: block;
-    font-size: $secondaryHeading;
-    margin-bottom: 10px;
-  }
-
 
 
   &__subtitle{
