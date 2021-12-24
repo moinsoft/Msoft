@@ -82,5 +82,10 @@ $(document).ready(function () {
   });
 
 
+  // Counter Up Plugin Active
+
+  $('.counter__number').counterUp();
+
+
 
 });
