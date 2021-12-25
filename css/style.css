@@ -847,15 +847,66 @@ Testimonials Section
   opacity: 0.8;
   z-index: -1;
 }
-.testimonials__content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+.testimonials__content .slick-arrow {
+  background-color: #000000;
+  border: 0;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  box-shadow: 0 0 1px 2px #bbbbbb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.testimonials__content .slick-arrow.slick-prev {
+  left: -100px;
+}
+.testimonials__content .slick-arrow.slick-next {
+  right: -100px;
+}
+.testimonials__content .slick-arrow i {
+  font-size: 1.375rem;
+}
+.testimonials__content .slick-arrow:hover {
+  color: #FF6600;
+  box-shadow: 0 0 3px 2px #FF6600;
+}
+.testimonials__content .slick-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+}
+.testimonials__content .slick-dots li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.testimonials__content .slick-dots li button {
+  text-indent: -9999px;
+  background-color: #000000;
+  border: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 2px #bbbbbb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.testimonials__content .slick-dots li button:hover {
+  box-shadow: 0 0 3px 2px #FF6600;
+}
+.testimonials__content .slick-dots li.slick-active button {
+  box-shadow: 0 0 3px 2px #FF6600;
 }
 .testimonials__single {
   border: 1px solid #bbbbbb;
   text-align: center;
-  padding: 20px;
+  padding: 20px 10px;
+  margin: 0 15px;
 }
 .testimonials__icon {
   color: #bbbbbb;

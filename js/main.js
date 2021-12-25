@@ -87,5 +87,19 @@ $(document).ready(function () {
   $('.counter__number').counterUp();
 
 
+  // Slick Slider Active In Testimonials
+
+  $('.testimonials__content').slick({
+    autoplay: true,
+    autoplaySpeed:3000,
+    //speed:300,
+    dots: true,
+    pauseOnDotsHover:true,
+    slidesToShow: 3,
+    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>',
+  });
+
+
 
 });

@@ -9,15 +9,88 @@ Testimonials Section
   color: $whiteColor;
 
   &__content{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 30px;
+    
+    .slick-arrow{
+      background-color: $blackColor;
+      border: 0;
+      color: $whiteColor;
+      position: absolute;
+      top: 50%;
+      transform: translateY( -50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      line-height: 40px;
+      box-shadow: 0 0 1px 2px $lightGrayColor;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &.slick-prev{
+        left: -100px;
+      }
+
+      &.slick-next{
+        right: -100px;
+      }
+
+
+      i{
+        font-size: $headingFour;
+      }
+
+      &:hover{
+        color: $primaryColor;
+        box-shadow: 0 0 3px 2px $primaryColor;
+      }
+
+    }
+
+
+    .slick-dots{
+      position: absolute;
+      left: 50%;
+      transform: translateX( -50%);
+      margin-top: 30px;
+
+      li{
+        display: inline-block;
+        margin: 0 15px;
+
+        button{
+          text-indent: -9999px;
+          background-color: $blackColor;
+          border: 0;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          box-shadow: 0 0 1px 2px $lightGrayColor;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover{
+            box-shadow: 0 0 3px 2px $primaryColor;
+          }
+
+        }
+
+        &.slick-active{
+          button{
+            box-shadow: 0 0 3px 2px $primaryColor;
+          }
+        }
+
+      }
+    }
+
   }
+
+
 
   &__single{
     border: 1px solid $lightGrayColor;
     text-align: center;
-    padding: 20px;
+    padding: 20px 10px;
+    margin: 0 15px;
   }
 
 
